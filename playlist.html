@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Ooyala Overlay</title>
+
+  </head>
+  <body>
+
+    <!-- Include plugins necessary for player -->
+    <!-- core provides basic player support-->
+    <script src="https://player.ooyala.com/static/v4/production/core.min.js"></script>
+    <!-- bit_wrapper supports HLS-everywhere and Dash support -->
+    <script src="https://player.ooyala.com/static/v4/production/video-plugin/bit_wrapper.min.js"></script>
+
+    <!-- html5-skin supports the basic player UI -->
+    <!-- Player UI Definitions-->
+    <script src="https://player.ooyala.com/static/v4/production/skin-plugin/html5-skin.min.js"></script>
+    <!-- Include the style sheet used by the player -->
+    <link rel="stylesheet" href="https://player.ooyala.com/static/v4/production/skin-plugin/html5-skin.min.css" />
+
+    <!-- App bundle -->
+    <script src="playlist.js"></script>
+    <!-- App branding -->
+    <link rel="stylesheet" href="playlist.css" />
+
+    <!-- The following div will contain the instantiated player, and is identified by id -->
+    <div id='container_1522330004'></div>
+    <!-- Player parameter modify some basic player behaviors and looks -->
+    <script>
+      var playerParam = {
+        apiKey: 'tkamgyOitk_HVUhlbZzlqyNRWu80.ZVXmZ',
+        pcode: 'tkamgyOitk_HVUhlbZzlqyNRWu80',
+        playerBrandingId: '9b11ad44d97344888a7d9535e3099fd6',
+        autoplay: false,
+        loop: false,
+      };
+      window.ooyalaOverlay.create('container_1522330004', 'xiMDc1ZjE6k1cOXa1fFa4GfwYbm7gTZc', playerParam);
+    </script>
+
+  </body>
+</html>
